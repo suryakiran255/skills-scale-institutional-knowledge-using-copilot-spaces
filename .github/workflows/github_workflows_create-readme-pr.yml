@@ -6,8 +6,10 @@ on:
 
 jobs:
   create-readme:
-    if: contains(github.event.comment.body, '/create-readme-pr')
+    # Use GitHub Actions expression syntax for the condition
+    if: ${{ contains(github.event.comment.body, '/create-readme-pr') }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
