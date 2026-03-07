@@ -59,7 +59,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: docs: add OctoAcme project management README
+          commit-message: "docs: add OctoAcme project management README"
           title: "[Process Doc Update] Add OctoAcme project management README"
           body: |
             Adds docs/README.md with a summary of OctoAcme project management processes and links to all process docs.
