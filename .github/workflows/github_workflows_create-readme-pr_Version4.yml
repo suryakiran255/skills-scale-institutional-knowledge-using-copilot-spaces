@@ -1,6 +1,7 @@
 # Add at the top of your workflow file
 permissions:
   contents: write
+  pull-requests: write
 
 name: Create README PR from Issue Command
 on:
