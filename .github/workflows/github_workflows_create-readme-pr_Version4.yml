@@ -1,5 +1,8 @@
-name: Create README PR from Issue Command
+# Add at the top of your workflow file
+permissions:
+  contents: write
 
+name: Create README PR from Issue Command
 on:
   issue_comment:
     types: [created]
