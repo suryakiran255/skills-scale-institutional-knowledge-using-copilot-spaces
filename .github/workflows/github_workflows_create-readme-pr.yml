@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create docs/README.md
+      - name: Ensure docs dir exists and write README
         run: |
           mkdir -p docs
           cat > docs/README.md <<'EOF'
